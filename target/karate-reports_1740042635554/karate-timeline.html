@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"wfSImuleSoft\/procApi\/getAgencyCityNameInProc[1.1:18]","start":1740042491431,"end":1740042493123,"title":"wfSImuleSoft\/procApi\/getAgencyCityNameInProc[1.1:18] 04:08:11.431-04:08:13.123 To verify the agency city name in Proc environment for ticket CSR-3519"},{"id":2,"group":1,"content":"wfSImuleSoft\/procApi\/getAgencyCodeInProc[1.1:18]","start":1740042494388,"end":1740042494790,"title":"wfSImuleSoft\/procApi\/getAgencyCodeInProc[1.1:18] 04:08:14.388-04:08:14.790 To verify the agency code in Proc environment for ticket CSR-3519"},{"id":3,"group":1,"content":"wfSImuleSoft\/procApi\/getAgencyDetailsInProc[1.1:17]","start":1740042494975,"end":1740042495243,"title":"wfSImuleSoft\/procApi\/getAgencyDetailsInProc[1.1:17] 04:08:14.975-04:08:15.243 To verify the agency details in Proc environment for ticket CSR-3519"},{"id":4,"group":1,"content":"wfSImuleSoft\/procApi\/getAgencyNameInProc[1.1:18]","start":1740042495388,"end":1740042495630,"title":"wfSImuleSoft\/procApi\/getAgencyNameInProc[1.1:18] 04:08:15.388-04:08:15.630 To verify the agency name in Proc environment for ticket CSR-3519"},{"id":5,"group":1,"content":"wfSImuleSoft\/procApi\/getAgencyPostalcodeInProc[1.1:16]","start":1740042495756,"end":1740042495998,"title":"wfSImuleSoft\/procApi\/getAgencyPostalcodeInProc[1.1:16] 04:08:15.756-04:08:15.998 To verify the agency postal code in Proc environment for ticket CSR-3519"},{"id":6,"group":1,"content":"wfSImuleSoft\/procApi\/getAgencyStateInProc[1.1:16]","start":1740042496130,"end":1740042496573,"title":"wfSImuleSoft\/procApi\/getAgencyStateInProc[1.1:16] 04:08:16.130-04:08:16.573 To verify the agency state name in Proc environment for ticket CSR-3519"},{"id":7,"group":1,"content":"wfSImuleSoft\/procApi\/getAgencyTotalNumberInProc[1.1:16]","start":1740042496678,"end":1740042497042,"title":"wfSImuleSoft\/procApi\/getAgencyTotalNumberInProc[1.1:16] 04:08:16.678-04:08:17.042 To verify the list of total agency registered in Proc environment for ticket CSR-3519"},{"id":8,"group":1,"content":"wfSImuleSoft\/procApi\/getStartProcessCSR3541Proc[1.1:19]","start":1740042497216,"end":1740042498939,"title":"wfSImuleSoft\/procApi\/getStartProcessCSR3541Proc[1.1:19] 04:08:17.216-04:08:18.939 Verify mule-payClaim-proc-api in proc environment for ticket CSR-3541"},{"id":9,"group":1,"content":"wfSImuleSoft\/procApi\/getStartSOCProc[1.1:16]","start":1740042499094,"end":1740042503536,"title":"wfSImuleSoft\/procApi\/getStartSOCProc[1.1:16] 04:08:19.094-04:08:23.536 Verify Start the SOC in proc environment for ticket CSR-3545"},{"id":10,"group":1,"content":"wfSImuleSoft\/procApi\/getTransDetailsProc[1.1:15]","start":1740042503629,"end":1740042503705,"title":"wfSImuleSoft\/procApi\/getTransDetailsProc[1.1:15] 04:08:23.629-04:08:23.705 Verify mule Trans processes details api in proc environment for ticket CSR-3546"},{"id":11,"group":1,"content":"wfSImuleSoft\/procApi\/getTransInstatusProc[1.1:15]","start":1740042503801,"end":1740042503982,"title":"wfSImuleSoft\/procApi\/getTransInstatusProc[1.1:15] 04:08:23.801-04:08:23.982 Verify mule trans instatus api in proc environment for ticket CSR-3546"},{"id":12,"group":1,"content":"wfSImuleSoft\/procApi\/getTransLastProc[1.1:15]","start":1740042504086,"end":1740042504150,"title":"wfSImuleSoft\/procApi\/getTransLastProc[1.1:15] 04:08:24.086-04:08:24.150 Verify mule trans status api in proc environment for ticket CSR-3546"},{"id":13,"group":1,"content":"wfSImuleSoft\/procApi\/getTransProcessProc[1.1:15]","start":1740042504240,"end":1740042504315,"title":"wfSImuleSoft\/procApi\/getTransProcessProc[1.1:15] 04:08:24.240-04:08:24.315 Verify mule Trans processes api in proc environment for ticket CSR-3546"},{"id":14,"group":1,"content":"wfSImuleSoft\/procApi\/getTransStatusProc[1.1:15]","start":1740042504424,"end":1740042504478,"title":"wfSImuleSoft\/procApi\/getTransStatusProc[1.1:15] 04:08:24.424-04:08:24.478 Verify mule trans status api in proc environment for ticket CSR-3546"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

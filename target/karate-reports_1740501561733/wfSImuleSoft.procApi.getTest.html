@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"b9c9e61e-54dd-45ea-aa53-1d33e17f2c68",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>wfSImuleSoft.procApi.getTest</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-02-25 11:27:52 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Get File Processes with Query Params</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">wfSImuleSoft/procApi/getTest.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Automate API with Query Parameters</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Get File Processes with Query Params</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>63</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://mule-wft.qa.medpro.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:27:52.158 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;api/fileprocesses/prc/v1/fileprocess&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.configure(&#39;ssl&#39;,true)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure printEnabled = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def queryParams = { page: 1, pagesize: 10, appshortname: &#39;MULE_PAYCLAIM_PROCESS_API&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Given param page = 1</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## And param pagesize = 10</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## And param appshortname = &#39;MULE_PAYCLAIM_PROCESS_API&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">51</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">11:27:52.224 [print] {
+  &quot;metadata&quot;: {
+    &quot;count&quot;: 25,
+    &quot;offset&quot;: 0,
+    &quot;limit&quot;: 25,
+    &quot;total&quot;: 3821,
+    &quot;page&quot;: 1,
+    &quot;searchterm&quot;: &quot;&quot;,
+    &quot;searchfilter&quot;: &quot;&quot;,
+    &quot;sortexpression&quot;: &quot;Id&quot;,
+    &quot;sortorder&quot;: &quot;desc&quot;,
+    &quot;refid&quot;: 0
+  },
+  &quot;content&quot;: [
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-25T10:19:39.651&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173175
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-25T10:02:46.849&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173174
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-25T07:03:08.109&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173173
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-25T04:50:47.814&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173172
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-25T04:45:10.219&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173171
+    },
+    {
+      &quot;AppId&quot;: 50,
+      &quot;AppShortName&quot;: &quot;MULE_PAYMENTSTATUS_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;20250224EASPaymentQuery&quot;,
+      &quot;FileName&quot;: &quot;20250224EASPaymentQuery&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-24T17:00:00.004&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173170
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-24T16:00:00.016&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173169
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-24T11:19:06.944&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173168
+    },
+    {
+      &quot;AppId&quot;: 50,
+      &quot;AppShortName&quot;: &quot;MULE_PAYMENTSTATUS_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;20250223EASPaymentQuery&quot;,
+      &quot;FileName&quot;: &quot;20250223EASPaymentQuery&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-23T17:00:00.001&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173167
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-23T16:00:00.007&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173166
+    },
+    {
+      &quot;AppId&quot;: 50,
+      &quot;AppShortName&quot;: &quot;MULE_PAYMENTSTATUS_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;20250222EASPaymentQuery&quot;,
+      &quot;FileName&quot;: &quot;20250222EASPaymentQuery&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-22T17:00:00.005&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173165
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-22T16:00:00.004&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173164
+    },
+    {
+      &quot;AppId&quot;: 50,
+      &quot;AppShortName&quot;: &quot;MULE_PAYMENTSTATUS_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;20250221EASPaymentQuery&quot;,
+      &quot;FileName&quot;: &quot;20250221EASPaymentQuery&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-21T17:00:00.015&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173163
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-21T16:00:00.011&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173162
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;claimspay.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\FileShare\\claimspay.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;outboundpayment.txt&quot;,
+      &quot;NewFileName&quot;: &quot;\\\\FTPoutbound\\outboundpayment.txt&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-21T12:00:05&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173161
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-21T09:06:00.211&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173160
+    },
+    {
+      &quot;AppId&quot;: 50,
+      &quot;AppShortName&quot;: &quot;MULE_PAYMENTSTATUS_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;20250220EASPaymentQuery&quot;,
+      &quot;FileName&quot;: &quot;20250220EASPaymentQuery&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-20T17:00:00.018&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173159
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-20T16:00:00.013&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173158
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-20T05:31:09.984&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173157
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-20T05:29:00.914&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173156
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-20T05:25:02.489&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173155
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-20T04:08:17.355&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173154
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-20T03:26:06.54&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173153
+    },
+    {
+      &quot;AppId&quot;: 50,
+      &quot;AppShortName&quot;: &quot;MULE_PAYMENTSTATUS_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;20250219EASPaymentQuery&quot;,
+      &quot;FileName&quot;: &quot;20250219EASPaymentQuery&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-19T17:00:00.014&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173152
+    },
+    {
+      &quot;AppId&quot;: 48,
+      &quot;AppShortName&quot;: &quot;MULE_PAYCLAIM_PROCESS_API&quot;,
+      &quot;FileNameOnly&quot;: &quot;EISAPCLM.txt&quot;,
+      &quot;FileName&quot;: &quot;\\\\deveas.medpro.com\\server\\rrng\\EISAPCLM.txt&quot;,
+      &quot;NewFileNameOnly&quot;: &quot;&quot;,
+      &quot;NewFileName&quot;: &quot;&quot;,
+      &quot;DateProcessed&quot;: &quot;2025-02-19T16:00:00.003&quot;,
+      &quot;Inbound&quot;: false,
+      &quot;StatusLogs&quot;: [
+      ],
+      &quot;IsChanged&quot;: false,
+      &quot;id&quot;: 173151
+    }
+  ],
+  &quot;message&quot;: {
+    &quot;id&quot;: 0,
+    &quot;level&quot;: 0,
+    &quot;state&quot;: 0
+  },
+  &quot;links&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

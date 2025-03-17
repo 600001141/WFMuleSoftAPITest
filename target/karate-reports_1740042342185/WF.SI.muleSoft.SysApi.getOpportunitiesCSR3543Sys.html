@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"b9c9e61e-54dd-45ea-aa53-1d33e17f2c68",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>WF.SI.muleSoft.SysApi.getOpportunitiesCSR3543Sys</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-02-13 08:04:27 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:16]"><span>[1.1:16]</span> <span>Verify opportunities for mule-salesforce-sys-api in sys environment for ticket CSR-3543</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">WF/SI/muleSoft/SysApi/getOpportunitiesCSR3543Sys.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Getting mule-salesforce-sys-api to test opportunities for ticket CSR-3543</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:16]</span>
+                <span class="scenario-name">Verify opportunities for mule-salesforce-sys-api in sys environment for ticket CSR-3543</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>605</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.configure(&#39;ssl&#39;,true)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">08:04:26.427 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://mule-wft.qa.medpro.com/api/salesforce/sys/v1/opportunities?orderBy=name&amp;order=desc&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">595</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7">08:04:26.442 request:
+1 &gt; GET https://mule-wft.qa.medpro.com/api/salesforce/sys/v1/opportunities?orderBy=name&amp;order=desc
+1 &gt; Host: mule-wft.qa.medpro.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:04:27.027 response time in milliseconds: 583
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=UTF-8
+1 &lt; Content-Length: 18477
+1 &lt; Date: Thu, 13 Feb 2025 13:04:27 GMT
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; Strict-Transport-Security: max-age=31536000;includeSubDomains
+{
+  &quot;metadata&quot;: null,
+  &quot;message&quot;: null,
+  &quot;links&quot;: null,
+  &quot;content&quot;: [
+    {
+      &quot;id&quot;: &quot;0067j000007KqSYAA0&quot;,
+      &quot;name&quot;: &quot;voluptatum quibusdam temporibus delectus&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-05-01&quot;,
+      &quot;situsState&quot;: &quot;Texas&quot;,
+      &quot;situsStateCode&quot;: &quot;TX&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002851&quot;,
+      &quot;brokerage&quot;: &quot;0017j00000cYBoUAAW&quot;,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: &quot;BR00002454&quot;,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;true&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;true&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqUSAA0&quot;,
+      &quot;name&quot;: &quot;voluptatibus quos dolor&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2020-01-01&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: null,
+      &quot;quoteNumber&quot;: &quot;Q#00002956&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: &quot;0037j00000csIALAA2&quot;,
+      &quot;wellfleetProducerId&quot;: &quot;PR00001920&quot;,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;true&quot;,
+      &quot;ci&quot;: &quot;true&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqTFAA0&quot;,
+      &quot;name&quot;: &quot;voluptatibus inventore sunt maxime error&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2022-01-01&quot;,
+      &quot;situsState&quot;: &quot;Connecticut&quot;,
+      &quot;situsStateCode&quot;: &quot;CT&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002894&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;true&quot;,
+      &quot;ci&quot;: &quot;true&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqV4AAK&quot;,
+      &quot;name&quot;: &quot;voluptates quo&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-02-21&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: &quot;Other&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002994&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqTLAA0&quot;,
+      &quot;name&quot;: &quot;voluptates nam&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-08-01&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: &quot;Other&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002900&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqTIAA0&quot;,
+      &quot;name&quot;: &quot;voluptates excepturi&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-07-30&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: &quot;Other&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002897&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqScAAK&quot;,
+      &quot;name&quot;: &quot;voluptates dolor nulla molestiae quam quia&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-06-01&quot;,
+      &quot;situsState&quot;: &quot;California&quot;,
+      &quot;situsStateCode&quot;: &quot;CA&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002855&quot;,
+      &quot;brokerage&quot;: &quot;0017j00000cYBoXAAW&quot;,
+      &quot;producerAssigned&quot;: &quot;0037j00000csI7QAAU&quot;,
+      &quot;wellfleetProducerId&quot;: &quot;PR00001783&quot;,
+      &quot;brokerageAgencyId&quot;: &quot;BR00002457&quot;,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;true&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqTTAA0&quot;,
+      &quot;name&quot;: &quot;voluptates commodi neque&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-07-01&quot;,
+      &quot;situsState&quot;: &quot;California&quot;,
+      &quot;situsStateCode&quot;: &quot;CA&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002908&quot;,
+      &quot;brokerage&quot;: &quot;0017j00000cYBoYAAW&quot;,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: &quot;BR00002458&quot;,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqU2AAK&quot;,
+      &quot;name&quot;: &quot;voluptatem unde rem&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-08-01&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: null,
+      &quot;quoteNumber&quot;: &quot;Q#00002930&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;true&quot;,
+      &quot;ci&quot;: &quot;true&quot;,
+      &quot;hi&quot;: &quot;true&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;true&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqSjAAK&quot;,
+      &quot;name&quot;: &quot;voluptas omnis ea officiis&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-07-01&quot;,
+      &quot;situsState&quot;: &quot;Indiana&quot;,
+      &quot;situsStateCode&quot;: &quot;IN&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002862&quot;,
+      &quot;brokerage&quot;: &quot;0017j00000cYBmTAAW&quot;,
+      &quot;producerAssigned&quot;: &quot;0037j00000csI99AAE&quot;,
+      &quot;wellfleetProducerId&quot;: &quot;PR00001890&quot;,
+      &quot;brokerageAgencyId&quot;: &quot;BR00002329&quot;,
+      &quot;std&quot;: &quot;true&quot;,
+      &quot;accident&quot;: &quot;true&quot;,
+      &quot;ci&quot;: &quot;true&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;true&quot;,
+      &quot;monthly&quot;: &quot;true&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqRuAAK&quot;,
+      &quot;name&quot;: &quot;vero voluptatum porro id praesentium&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-01-01&quot;,
+      &quot;situsState&quot;: &quot;Maryland&quot;,
+      &quot;situsStateCode&quot;: &quot;MD&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002811&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: &quot;0037j00000csI8BAAU&quot;,
+      &quot;wellfleetProducerId&quot;: &quot;PR00001830&quot;,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;true&quot;,
+      &quot;ci&quot;: &quot;true&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;true&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqSQAA0&quot;,
+      &quot;name&quot;: &quot;vero nisi labore veritatis voluptatum libero&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-08-01&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: null,
+      &quot;quoteNumber&quot;: &quot;Q#00002843&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqT9AAK&quot;,
+      &quot;name&quot;: &quot;veniam harum dolorem velit modi&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-08-01&quot;,
+      &quot;situsState&quot;: &quot;Delaware&quot;,
+      &quot;situsStateCode&quot;: &quot;DE&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002888&quot;,
+      &quot;brokerage&quot;: &quot;0017j00000cYBoHAAW&quot;,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: &quot;BR00002441&quot;,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;true&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;true&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqUNAA0&quot;,
+      &quot;name&quot;: &quot;veniam eligendi eos error&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2020-02-01&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: null,
+      &quot;quoteNumber&quot;: &quot;Q#00002951&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;true&quot;,
+      &quot;ci&quot;: &quot;true&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqUCAA0&quot;,
+      &quot;name&quot;: &quot;veniam beatae ea at&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-10-01&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: null,
+      &quot;quoteNumber&quot;: &quot;Q#00002940&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;true&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;true&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqUZAA0&quot;,
+      &quot;name&quot;: &quot;vel iusto provident unde&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2020-04-01&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: null,
+      &quot;quoteNumber&quot;: &quot;Q#00002963&quot;,
+      &quot;brokerage&quot;: &quot;0017j00000cYBoKAAW&quot;,
+      &quot;producerAssigned&quot;: &quot;0037j00000csIAtAAM&quot;,
+      &quot;wellfleetProducerId&quot;: &quot;PR00001944&quot;,
+      &quot;brokerageAgencyId&quot;: &quot;BR00002444&quot;,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;true&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqSVAA0&quot;,
+      &quot;name&quot;: &quot;totam incidunt repellendus asperiores&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-08-01&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: &quot;Other&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002848&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000008PZO3AAO&quot;,
+      &quot;name&quot;: &quot;Test-QA-smoke-2&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2022-03-31&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: null,
+      &quot;quoteNumber&quot;: &quot;Q#00003002&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000008PZNyAAO&quot;,
+      &quot;name&quot;: &quot;Test-QA-smoke-1&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2022-03-31&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: null,
+      &quot;quoteNumber&quot;: &quot;Q#00003001&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000008Qjq2AAC&quot;,
+      &quot;name&quot;: &quot;Test-QA-SHIP-0523-1&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2022-05-31&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: &quot;Other&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00003003&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j00000B1B9nAAF&quot;,
+      &quot;name&quot;: &quot;Test-Accident-Cal-56&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2023-05-18&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: null,
+      &quot;quoteNumber&quot;: &quot;Q#00003006&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;true&quot;,
+      &quot;ci&quot;: &quot;true&quot;,
+      &quot;hi&quot;: &quot;true&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007M1iNAAS&quot;,
+      &quot;name&quot;: &quot;test&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-11-26&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: null,
+      &quot;quoteNumber&quot;: &quot;Q#00002996&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqTUAA0&quot;,
+      &quot;name&quot;: &quot;tenetur minus laborum culpa architecto voluptatibus&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-05-01&quot;,
+      &quot;situsState&quot;: &quot;Texas&quot;,
+      &quot;situsStateCode&quot;: &quot;TX&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002909&quot;,
+      &quot;brokerage&quot;: &quot;0017j00000cYBoBAAW&quot;,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: &quot;BR00002435&quot;,
+      &quot;std&quot;: &quot;true&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;true&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqSMAA0&quot;,
+      &quot;name&quot;: &quot;tempora corrupti&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-07-30&quot;,
+      &quot;situsState&quot;: null,
+      &quot;situsStateCode&quot;: &quot;Other&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002839&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: null,
+      &quot;wellfleetProducerId&quot;: null,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;false&quot;,
+      &quot;accident&quot;: &quot;false&quot;,
+      &quot;ci&quot;: &quot;false&quot;,
+      &quot;hi&quot;: &quot;false&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;false&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0067j000007KqSWAA0&quot;,
+      &quot;name&quot;: &quot;suscipit sequi voluptate ipsum fuga&quot;,
+      &quot;eisCustomerNumber&quot;: null,
+      &quot;eisCaseNumber&quot;: null,
+      &quot;eisStatus&quot;: null,
+      &quot;closeDate&quot;: &quot;2021-07-01&quot;,
+      &quot;situsState&quot;: &quot;Florida&quot;,
+      &quot;situsStateCode&quot;: &quot;FL&quot;,
+      &quot;quoteNumber&quot;: &quot;Q#00002849&quot;,
+      &quot;brokerage&quot;: null,
+      &quot;producerAssigned&quot;: &quot;0037j00000csIAkAAM&quot;,
+      &quot;wellfleetProducerId&quot;: &quot;PR00001935&quot;,
+      &quot;brokerageAgencyId&quot;: null,
+      &quot;std&quot;: &quot;true&quot;,
+      &quot;accident&quot;: &quot;true&quot;,
+      &quot;ci&quot;: &quot;true&quot;,
+      &quot;hi&quot;: &quot;true&quot;,
+      &quot;policeAccident&quot;: &quot;false&quot;,
+      &quot;policeAdminDuty&quot;: &quot;false&quot;,
+      &quot;weekly&quot;: &quot;false&quot;,
+      &quot;monthly&quot;: &quot;true&quot;,
+      &quot;quarterly&quot;: &quot;false&quot;,
+      &quot;annually&quot;: &quot;false&quot;,
+      &quot;lastModifiedDate&quot;: null
+    }
+  ]
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def length1 = karate.jsonPath(response, &quot;$.content.[*].id&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print length1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.11">08:04:27.033 [print] [
+  &quot;0067j000007KqSYAA0&quot;,
+  &quot;0067j000007KqUSAA0&quot;,
+  &quot;0067j000007KqTFAA0&quot;,
+  &quot;0067j000007KqV4AAK&quot;,
+  &quot;0067j000007KqTLAA0&quot;,
+  &quot;0067j000007KqTIAA0&quot;,
+  &quot;0067j000007KqScAAK&quot;,
+  &quot;0067j000007KqTTAA0&quot;,
+  &quot;0067j000007KqU2AAK&quot;,
+  &quot;0067j000007KqSjAAK&quot;,
+  &quot;0067j000007KqRuAAK&quot;,
+  &quot;0067j000007KqSQAA0&quot;,
+  &quot;0067j000007KqT9AAK&quot;,
+  &quot;0067j000007KqUNAA0&quot;,
+  &quot;0067j000007KqUCAA0&quot;,
+  &quot;0067j000007KqUZAA0&quot;,
+  &quot;0067j000007KqSVAA0&quot;,
+  &quot;0067j000008PZO3AAO&quot;,
+  &quot;0067j000008PZNyAAO&quot;,
+  &quot;0067j000008Qjq2AAC&quot;,
+  &quot;0067j00000B1B9nAAF&quot;,
+  &quot;0067j000007M1iNAAS&quot;,
+  &quot;0067j000007KqTUAA0&quot;,
+  &quot;0067j000007KqSMAA0&quot;,
+  &quot;0067j000007KqSWAA0&quot;
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def count = length1.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match count == 25</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

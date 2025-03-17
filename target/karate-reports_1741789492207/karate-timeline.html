@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"wfSImuleSoft\/expApi\/getAgencyCityNameInExp[1.1:24]","start":1741619980331,"end":1741619980700,"title":"wfSImuleSoft\/expApi\/getAgencyCityNameInExp[1.1:24] 11:19:40.331-11:19:40.700 To verify the agency City name in EXP environment for ticket CSR-3519"},{"id":2,"group":1,"content":"wfSImuleSoft\/expApi\/getAgencyCodeInExp[1.1:25]","start":1741619980831,"end":1741619981161,"title":"wfSImuleSoft\/expApi\/getAgencyCodeInExp[1.1:25] 11:19:40.831-11:19:41.161 To verify the agency code in EXP environment for ticket CSR-3519"},{"id":3,"group":1,"content":"wfSImuleSoft\/expApi\/getAgencyDetailsInExp[1.1:24]","start":1741619979359,"end":1741619979695,"title":"wfSImuleSoft\/expApi\/getAgencyDetailsInExp[1.1:24] 11:19:39.359-11:19:39.695 To verify the agency details in EXP environment for ticket CSR-3519"},{"id":4,"group":1,"content":"wfSImuleSoft\/expApi\/getAgencyNameInExp[1.1:25]","start":1741619979865,"end":1741619980199,"title":"wfSImuleSoft\/expApi\/getAgencyNameInExp[1.1:25] 11:19:39.865-11:19:40.199 To verify the agency name in EXP environment for ticket CSR-3519"},{"id":5,"group":1,"content":"wfSImuleSoft\/expApi\/getAgencyPostalcodeInExp[1.1:26]","start":1741619981299,"end":1741619981548,"title":"wfSImuleSoft\/expApi\/getAgencyPostalcodeInExp[1.1:26] 11:19:41.299-11:19:41.548 To verify the agency Postal code in EXP environment for ticket CSR-3519"},{"id":6,"group":1,"content":"wfSImuleSoft\/expApi\/getAgencyStateInExp[1.1:24]","start":1741619981625,"end":1741619982013,"title":"wfSImuleSoft\/expApi\/getAgencyStateInExp[1.1:24] 11:19:41.625-11:19:42.013 To verify the agency state name in EXP environment for ticket CSR-3519"},{"id":7,"group":1,"content":"wfSImuleSoft\/expApi\/getAgencyTotalNumbersInExp[1.1:26]","start":1741619977043,"end":1741619978525,"title":"wfSImuleSoft\/expApi\/getAgencyTotalNumbersInExp[1.1:26] 11:19:37.043-11:19:38.525 To verify the total listed agency details in EXP environment for ticket CSR-3519"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

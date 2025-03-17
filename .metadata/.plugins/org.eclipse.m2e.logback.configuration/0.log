@@ -1,0 +1,14 @@
+2024-12-26 10:25:55,344 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-12-26 10:28:08,946 [Worker-13: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.example:WFRegressionTest:1.0-SNAPSHOT @ C:\Users\600001141\WfAPIAutomation\WfAPIAutomation\pom.xml.
+2024-12-26 10:28:11,015 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WFRegressionTest/src/main/java
+2024-12-26 10:28:11,070 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WFRegressionTest/src/test/java
+2024-12-26 10:28:11,071 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /WFRegressionTest/src/test/java overlaps with sources folder /WFRegressionTest/src/test/java
+2024-12-26 10:28:12,590 [Worker-13: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 10 sec
+2024-12-26 10:28:18,340 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-12-26 10:28:18,344 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\600001141\WfAPIAutomation\WfAPIAutomation\src\main\resources
+2024-12-26 10:28:18,346 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-12-26 10:28:18,356 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 160 resources
+2024-12-26 10:32:07,432 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-12-26 10:32:07,436 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\600001141\WfAPIAutomation\WfAPIAutomation\src\main\resources
+2024-12-26 10:32:07,439 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-12-26 10:32:07,444 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

@@ -1,12 +1,14 @@
 Feature: Getting mule-entlookups-exp-api to get LuItem for ticket CSR-3536
 
 
+ 
 Background: 
   * url baseUrl
   * header Content-Type = 'application/json'    
   * header Accept = 'application/json'
-  # * def getUrl = baseUrl+'api/lookups/v1/ent/items/2797'
+  
 
+ @reg
 Scenario Outline: To verify the endlookups to get LuItem in Exp environment for ticket CSR-3536
 
 * karate.configure('ssl',true)

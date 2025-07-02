@@ -1,5 +1,7 @@
 Feature:  Getting mule-salesforce-sys-api to test opportunities for ticket CSR-3543
 
+
+@reg
 Scenario Outline: Verify opportunities for mule-salesforce-sys-api in sys environment for ticket CSR-3543
 
 * karate.configure('ssl',true)

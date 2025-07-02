@@ -1,6 +1,8 @@
 Feature: Getting mule-agency-proc-api list of total agency registered for ticket CSR-3519
 
 
+
+@reg
 Scenario Outline: To verify the list of total agency registered in Proc environment for ticket CSR-3519
 * karate.configure('ssl',true)
 Given url 'https://mule-wft.qa.medpro.com/api/agency/prc/v1/<total_agency>'

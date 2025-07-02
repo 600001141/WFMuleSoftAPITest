@@ -5,9 +5,9 @@ Background:
   * url baseUrl
   * header Content-Type = 'application/json'    
   * header Accept = 'application/json'
-  # * def getUrl = baseUrl+'api/agency/v1/<Agency_postalcode>'
   
-
+  
+@reg 
 Scenario Outline: To verify the agency Postal code in EXP environment for ticket CSR-3519
 * karate.configure('ssl',true)
 

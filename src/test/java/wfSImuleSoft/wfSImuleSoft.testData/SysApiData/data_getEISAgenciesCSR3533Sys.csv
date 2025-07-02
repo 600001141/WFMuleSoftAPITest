@@ -1,0 +1,2 @@
+id,name,code,taxId,status,addLine1,city,pCode,statePCd,countryCd,primaryIn,channelCd
+795421,"""QA Agency""","""QAG""","""QAG""","""Active""","""QA Agency Addr1""","""Vilnius""","""95320""","""CA""","""US""",TRUE,"""agency"""

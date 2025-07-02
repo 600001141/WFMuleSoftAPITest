@@ -1,12 +1,13 @@
 Feature: Getting mule-agency-exp Agency City name for ticket CSR-3519
 
 
+
 Background: 
   * url baseUrl
   * header Content-Type = 'application/json'    
   * header Accept = 'application/json'
   * def getUrl = baseUrl+'api/agency/v1/agencies'
-
+ @reg
   Scenario Outline: To verify the agency City name in EXP environment for ticket CSR-3519
     * karate.configure('ssl',true)
     Given url getUrl

@@ -1,0 +1,2 @@
+count,page,limit,claimNumber,claimStatusCd,customerNumber,lossDesc
+1,1,0,"""C548""","""OPEN""","""511845""","""Description40961158"""

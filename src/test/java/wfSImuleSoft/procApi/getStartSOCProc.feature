@@ -1,5 +1,7 @@
 Feature: Getting mule-soc-proc-api for ticket CSR-3545
 
+  
+ @reg 
   Scenario Outline: Verify Start the SOC in proc environment for ticket CSR-3545
     * karate.configure('ssl',true)
     Given url 'https://mule-wft.qa.medpro.com/api/socproc/v1/<Start_SOC>'

@@ -5,8 +5,8 @@ Background:
   * url baseUrl
   * header Content-Type = 'application/json'    
   * header Accept = 'application/json'
-  # * def getUrl = baseUrl+'api/lookups/v1/eis/categories/ACAmbulanceTransportation/items/100'
-
+ 
+ @reg
 Scenario Outline: To verify the endlookups to get EIS LU Items in Exp environment for ticket CSR-3536
 
 * karate.configure('ssl',true)

@@ -1,5 +1,7 @@
 Feature: Getting mule-s3-system-api to get 404 error message for test ticket CSR-3521
 
+  
+  @reg
   Scenario Outline: To verify the system api to get 404 error message for ticket CSR-3521
     * karate.configure('ssl',true)
     Given url 'https://mule-wft.qa.medpro.com/api/s3/sys/v1/<Pdf_file>'

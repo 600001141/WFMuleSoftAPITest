@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: wfSImuleSoft/sysApi/getEISCustomersCSR3533Sys.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Wf muleSoft API regression test report</td>
+      <td>04 Jun 2025, 05:29</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">wfSImuleSoft/sysApi/getEISCustomersCSR3533Sys.feature</td>
+          <td      class="passed"    >15</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">15</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1556509600">1.556</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">wfSImuleSoft/sysApi/getEISCustomersCSR3533Sys.feature</span>
+
+
+</div>
+
+        <div class="description indention">Getting mule-eis-sys-api to get EIS customers for ticket CSR-3533</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>05:28:59.035 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getUrl = baseUrl+'api/eis/sys/v1/customers'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149503059.html">@reg</a>
+</div>
+
+
+  <span class="lead-duration duration">1.555</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify mule-eis-sys-api to get EIS customers for ticket CSR-3533</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">karate.configure('ssl',true)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url getUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param offset = 0</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param limit = 10</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param sort = 'lastName'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param firstname = 'John'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.549</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>05:29:00.591 [print] {
+  &quot;metadata&quot;: {
+    &quot;count&quot;: 10,
+    &quot;offset&quot;: 0,
+    &quot;limit&quot;: 10,
+    &quot;total&quot;: 1932,
+    &quot;page&quot;: 1,
+    &quot;searchterm&quot;: null,
+    &quot;searchfilter&quot;: &quot;&quot;,
+    &quot;sortexpression&quot;: &quot;&quot;,
+    &quot;sortorder&quot;: &quot;&quot;,
+    &quot;refid&quot;: 0
+  },
+  &quot;message&quot;: null,
+  &quot;links&quot;: null,
+  &quot;content&quot;: [
+    {
+      &quot;customerNumber&quot;: &quot;527704&quot;,
+      &quot;customerType&quot;: &quot;INDV&quot;,
+      &quot;accountNumber&quot;: &quot;627702&quot;,
+      &quot;customerStatus&quot;: &quot;CUSTOMER&quot;,
+      &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;owner&quot;: null,
+      &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;displayValue&quot;: &quot;John Apple WFL2&quot;,
+      &quot;brandCd&quot;: null,
+      &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;specialClaimReview&quot;: false,
+      &quot;paperless&quot;: false,
+      &quot;segments&quot;: [
+      ],
+      &quot;registeredOnline&quot;: false,
+      &quot;archived&quot;: false,
+      &quot;sourceOfExchangeRate&quot;: null,
+      &quot;rateDateIntake&quot;: null,
+      &quot;rateDatePayment&quot;: null,
+      &quot;preferredCurrency&quot;: null,
+      &quot;individualDetails&quot;: {
+        &quot;firstName&quot;: &quot;John&quot;,
+        &quot;lastName&quot;: &quot;Apple WFL2&quot;,
+        &quot;middleName&quot;: &quot;&quot;,
+        &quot;title&quot;: null,
+        &quot;suffix&quot;: null,
+        &quot;nickname&quot;: null,
+        &quot;birthDate&quot;: &quot;1985-11-17&quot;,
+        &quot;genderCd&quot;: null,
+        &quot;maritalStatusCd&quot;: null,
+        &quot;taxId&quot;: &quot;178-76-5678&quot;,
+        &quot;deceased&quot;: false,
+        &quot;deathDate&quot;: null,
+        &quot;deathNotificationReceived&quot;: false,
+        &quot;occupationCd&quot;: null,
+        &quot;occupationDescription&quot;: null,
+        &quot;tobaccoCd&quot;: null,
+        &quot;citizenshipCd&quot;: null,
+        &quot;interests&quot;: [
+        ],
+        &quot;disabilities&quot;: [
+        ],
+        &quot;designationCd&quot;: null,
+        &quot;designationDescription&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;associateEmployments&quot;: false,
+        &quot;associateProviders&quot;: false,
+        &quot;associateBusinessEntity&quot;: false
+      },
+      &quot;businessDetails&quot;: null,
+      &quot;extensionFields&quot;: {
+        &quot;electronicConsent&quot;: null,
+        &quot;participationEmployments&quot;: [
+          {
+            &quot;sponsorNumber&quot;: &quot;527701&quot;,
+            &quot;employeeId&quot;: &quot;&quot;
+          }
+        ]
+      },
+      &quot;preferredContactMethod&quot;: null,
+      &quot;majorAccount&quot;: null,
+      &quot;groupInfo&quot;: [
+      ],
+      &quot;addresses&quot;: [
+        {
+          &quot;id&quot;: 404499870,
+          &quot;contactMethod&quot;: &quot;ADDRESS&quot;,
+          &quot;contactType&quot;: &quot;residence&quot;,
+          &quot;preferredInd&quot;: null,
+          &quot;doNotSolicitInd&quot;: null,
+          &quot;comment&quot;: null,
+          &quot;communicationPreferences&quot;: [
+          ],
+          &quot;extensionFields&quot;: {
+          },
+          &quot;temporary&quot;: false,
+          &quot;effectiveFrom&quot;: null,
+          &quot;effectiveTo&quot;: null,
+          &quot;duration&quot;: null,
+          &quot;stateProvCd&quot;: &quot;IA&quot;,
+          &quot;postalCode&quot;: &quot;50266&quot;,
+          &quot;countryCd&quot;: &quot;US&quot;,
+          &quot;addressLine1&quot;: &quot;1234&quot;,
+          &quot;addressLine2&quot;: &quot;&quot;,
+          &quot;addressLine3&quot;: &quot;&quot;,
+          &quot;city&quot;: &quot;Polk&quot;,
+          &quot;county&quot;: null,
+          &quot;inCareOf&quot;: null,
+          &quot;subdivision&quot;: null,
+          &quot;attention&quot;: null,
+          &quot;validationIndicator&quot;: null,
+          &quot;latitude&quot;: null,
+          &quot;longitude&quot;: null,
+          &quot;accuracy&quot;: null,
+          &quot;referenceId&quot;: null
+        }
+      ],
+      &quot;chats&quot;: [
+      ],
+      &quot;emails&quot;: [
+      ],
+      &quot;phones&quot;: [
+      ],
+      &quot;socialNets&quot;: [
+      ],
+      &quot;webAddresses&quot;: [
+      ],
+      &quot;agencies&quot;: [
+      ],
+      &quot;indCustomerAdditionalNames&quot;: [
+      ],
+      &quot;businessCustomerAdditionalNames&quot;: null,
+      &quot;customerEmployments&quot;: null,
+      &quot;providers&quot;: null,
+      &quot;genericRelationships&quot;: [
+      ],
+      &quot;navigationLinks&quot;: [
+      ],
+      &quot;lastUpdateDate&quot;: &quot;2025-05-28T13:38:34.450Z&quot;
+    },
+    {
+      &quot;customerNumber&quot;: &quot;512982&quot;,
+      &quot;customerType&quot;: &quot;INDIVIDUAL_LEAD&quot;,
+      &quot;accountNumber&quot;: &quot;612982&quot;,
+      &quot;customerStatus&quot;: &quot;UNQUALIFIED&quot;,
+      &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;owner&quot;: null,
+      &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;displayValue&quot;: &quot;John Candy&quot;,
+      &quot;brandCd&quot;: null,
+      &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;specialClaimReview&quot;: false,
+      &quot;paperless&quot;: false,
+      &quot;segments&quot;: [
+      ],
+      &quot;registeredOnline&quot;: false,
+      &quot;archived&quot;: false,
+      &quot;sourceOfExchangeRate&quot;: null,
+      &quot;rateDateIntake&quot;: null,
+      &quot;rateDatePayment&quot;: null,
+      &quot;preferredCurrency&quot;: null,
+      &quot;individualDetails&quot;: {
+        &quot;firstName&quot;: &quot;John&quot;,
+        &quot;lastName&quot;: &quot;Candy&quot;,
+        &quot;middleName&quot;: &quot;&quot;,
+        &quot;title&quot;: null,
+        &quot;suffix&quot;: null,
+        &quot;nickname&quot;: &quot;&quot;,
+        &quot;birthDate&quot;: null,
+        &quot;genderCd&quot;: null,
+        &quot;maritalStatusCd&quot;: null,
+        &quot;taxId&quot;: &quot;&quot;,
+        &quot;deceased&quot;: false,
+        &quot;deathDate&quot;: null,
+        &quot;deathNotificationReceived&quot;: false,
+        &quot;occupationCd&quot;: null,
+        &quot;occupationDescription&quot;: null,
+        &quot;tobaccoCd&quot;: null,
+        &quot;citizenshipCd&quot;: null,
+        &quot;interests&quot;: [
+        ],
+        &quot;disabilities&quot;: [
+        ],
+        &quot;designationCd&quot;: null,
+        &quot;designationDescription&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;associateEmployments&quot;: false,
+        &quot;associateProviders&quot;: false,
+        &quot;associateBusinessEntity&quot;: false
+      },
+      &quot;businessDetails&quot;: null,
+      &quot;extensionFields&quot;: {
+        &quot;electronicConsent&quot;: null,
+        &quot;participationEmployments&quot;: [
+        ]
+      },
+      &quot;preferredContactMethod&quot;: null,
+      &quot;majorAccount&quot;: null,
+      &quot;groupInfo&quot;: [
+      ],
+      &quot;addresses&quot;: [
+      ],
+      &quot;chats&quot;: [
+      ],
+      &quot;emails&quot;: [
+      ],
+      &quot;phones&quot;: [
+      ],
+      &quot;socialNets&quot;: [
+      ],
+      &quot;webAddresses&quot;: [
+      ],
+      &quot;agencies&quot;: [
+        {
+          &quot;agencyCode&quot;: &quot;QAG&quot;
+        }
+      ],
+      &quot;indCustomerAdditionalNames&quot;: [
+      ],
+      &quot;businessCustomerAdditionalNames&quot;: null,
+      &quot;customerEmployments&quot;: null,
+      &quot;providers&quot;: null,
+      &quot;genericRelationships&quot;: [
+      ],
+      &quot;navigationLinks&quot;: [
+      ],
+      &quot;lastUpdateDate&quot;: &quot;2021-01-05T16:50:52.757Z&quot;
+    },
+    {
+      &quot;customerNumber&quot;: &quot;527719&quot;,
+      &quot;customerType&quot;: &quot;INDV&quot;,
+      &quot;accountNumber&quot;: &quot;627717&quot;,
+      &quot;customerStatus&quot;: &quot;CUSTOMER&quot;,
+      &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;owner&quot;: null,
+      &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;displayValue&quot;: &quot;John Company 1&quot;,
+      &quot;brandCd&quot;: null,
+      &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;specialClaimReview&quot;: false,
+      &quot;paperless&quot;: false,
+      &quot;segments&quot;: [
+      ],
+      &quot;registeredOnline&quot;: false,
+      &quot;archived&quot;: false,
+      &quot;sourceOfExchangeRate&quot;: null,
+      &quot;rateDateIntake&quot;: null,
+      &quot;rateDatePayment&quot;: null,
+      &quot;preferredCurrency&quot;: null,
+      &quot;individualDetails&quot;: {
+        &quot;firstName&quot;: &quot;John&quot;,
+        &quot;lastName&quot;: &quot;Company 1&quot;,
+        &quot;middleName&quot;: &quot;&quot;,
+        &quot;title&quot;: null,
+        &quot;suffix&quot;: null,
+        &quot;nickname&quot;: null,
+        &quot;birthDate&quot;: &quot;1985-11-17&quot;,
+        &quot;genderCd&quot;: null,
+        &quot;maritalStatusCd&quot;: null,
+        &quot;taxId&quot;: &quot;176-78-9075&quot;,
+        &quot;deceased&quot;: false,
+        &quot;deathDate&quot;: null,
+        &quot;deathNotificationReceived&quot;: false,
+        &quot;occupationCd&quot;: null,
+        &quot;occupationDescription&quot;: null,
+        &quot;tobaccoCd&quot;: null,
+        &quot;citizenshipCd&quot;: null,
+        &quot;interests&quot;: [
+        ],
+        &quot;disabilities&quot;: [
+        ],
+        &quot;designationCd&quot;: null,
+        &quot;designationDescription&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;associateEmployments&quot;: false,
+        &quot;associateProviders&quot;: false,
+        &quot;associateBusinessEntity&quot;: false
+      },
+      &quot;businessDetails&quot;: null,
+      &quot;extensionFields&quot;: {
+        &quot;electronicConsent&quot;: null,
+        &quot;participationEmployments&quot;: [
+          {
+            &quot;sponsorNumber&quot;: &quot;527706&quot;,
+            &quot;employeeId&quot;: &quot;&quot;
+          }
+        ]
+      },
+      &quot;preferredContactMethod&quot;: null,
+      &quot;majorAccount&quot;: null,
+      &quot;groupInfo&quot;: [
+      ],
+      &quot;addresses&quot;: [
+        {
+          &quot;id&quot;: 404673207,
+          &quot;contactMethod&quot;: &quot;ADDRESS&quot;,
+          &quot;contactType&quot;: &quot;residence&quot;,
+          &quot;preferredInd&quot;: null,
+          &quot;doNotSolicitInd&quot;: null,
+          &quot;comment&quot;: null,
+          &quot;communicationPreferences&quot;: [
+          ],
+          &quot;extensionFields&quot;: {
+          },
+          &quot;temporary&quot;: false,
+          &quot;effectiveFrom&quot;: null,
+          &quot;effectiveTo&quot;: null,
+          &quot;duration&quot;: null,
+          &quot;stateProvCd&quot;: &quot;IA&quot;,
+          &quot;postalCode&quot;: &quot;50266&quot;,
+          &quot;countryCd&quot;: &quot;US&quot;,
+          &quot;addressLine1&quot;: &quot;6500 EP True Parkway&quot;,
+          &quot;addressLine2&quot;: &quot;111&quot;,
+          &quot;addressLine3&quot;: &quot;&quot;,
+          &quot;city&quot;: &quot;Des Moines&quot;,
+          &quot;county&quot;: null,
+          &quot;inCareOf&quot;: null,
+          &quot;subdivision&quot;: null,
+          &quot;attention&quot;: null,
+          &quot;validationIndicator&quot;: null,
+          &quot;latitude&quot;: null,
+          &quot;longitude&quot;: null,
+          &quot;accuracy&quot;: null,
+          &quot;referenceId&quot;: null
+        }
+      ],
+      &quot;chats&quot;: [
+      ],
+      &quot;emails&quot;: [
+      ],
+      &quot;phones&quot;: [
+      ],
+      &quot;socialNets&quot;: [
+      ],
+      &quot;webAddresses&quot;: [
+      ],
+      &quot;agencies&quot;: [
+      ],
+      &quot;indCustomerAdditionalNames&quot;: [
+      ],
+      &quot;businessCustomerAdditionalNames&quot;: null,
+      &quot;customerEmployments&quot;: null,
+      &quot;providers&quot;: null,
+      &quot;genericRelationships&quot;: [
+      ],
+      &quot;navigationLinks&quot;: [
+      ],
+      &quot;lastUpdateDate&quot;: &quot;2025-05-29T17:36:53.050Z&quot;
+    },
+    {
+      &quot;customerNumber&quot;: &quot;527720&quot;,
+      &quot;customerType&quot;: &quot;INDV&quot;,
+      &quot;accountNumber&quot;: &quot;627718&quot;,
+      &quot;customerStatus&quot;: &quot;CUSTOMER&quot;,
+      &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;owner&quot;: null,
+      &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;displayValue&quot;: &quot;John Company 3&quot;,
+      &quot;brandCd&quot;: &quot;007&quot;,
+      &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;specialClaimReview&quot;: false,
+      &quot;paperless&quot;: false,
+      &quot;segments&quot;: [
+      ],
+      &quot;registeredOnline&quot;: false,
+      &quot;archived&quot;: false,
+      &quot;sourceOfExchangeRate&quot;: null,
+      &quot;rateDateIntake&quot;: null,
+      &quot;rateDatePayment&quot;: null,
+      &quot;preferredCurrency&quot;: null,
+      &quot;individualDetails&quot;: {
+        &quot;firstName&quot;: &quot;John&quot;,
+        &quot;lastName&quot;: &quot;Company 3&quot;,
+        &quot;middleName&quot;: &quot;&quot;,
+        &quot;title&quot;: null,
+        &quot;suffix&quot;: null,
+        &quot;nickname&quot;: null,
+        &quot;birthDate&quot;: &quot;1985-11-17&quot;,
+        &quot;genderCd&quot;: null,
+        &quot;maritalStatusCd&quot;: null,
+        &quot;taxId&quot;: &quot;178-76-5489&quot;,
+        &quot;deceased&quot;: false,
+        &quot;deathDate&quot;: null,
+        &quot;deathNotificationReceived&quot;: false,
+        &quot;occupationCd&quot;: null,
+        &quot;occupationDescription&quot;: null,
+        &quot;tobaccoCd&quot;: null,
+        &quot;citizenshipCd&quot;: null,
+        &quot;interests&quot;: [
+        ],
+        &quot;disabilities&quot;: [
+        ],
+        &quot;designationCd&quot;: null,
+        &quot;designationDescription&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;associateEmployments&quot;: false,
+        &quot;associateProviders&quot;: false,
+        &quot;associateBusinessEntity&quot;: false
+      },
+      &quot;businessDetails&quot;: null,
+      &quot;extensionFields&quot;: {
+        &quot;electronicConsent&quot;: null,
+        &quot;participationEmployments&quot;: [
+          {
+            &quot;sponsorNumber&quot;: &quot;527708&quot;,
+            &quot;employeeId&quot;: &quot;&quot;
+          }
+        ]
+      },
+      &quot;preferredContactMethod&quot;: null,
+      &quot;majorAccount&quot;: null,
+      &quot;groupInfo&quot;: [
+      ],
+      &quot;addresses&quot;: [
+        {
+          &quot;id&quot;: 404673208,
+          &quot;contactMethod&quot;: &quot;ADDRESS&quot;,
+          &quot;contactType&quot;: &quot;residence&quot;,
+          &quot;preferredInd&quot;: null,
+          &quot;doNotSolicitInd&quot;: null,
+          &quot;comment&quot;: null,
+          &quot;communicationPreferences&quot;: [
+          ],
+          &quot;extensionFields&quot;: {
+          },
+          &quot;temporary&quot;: false,
+          &quot;effectiveFrom&quot;: null,
+          &quot;effectiveTo&quot;: null,
+          &quot;duration&quot;: null,
+          &quot;stateProvCd&quot;: &quot;IA&quot;,
+          &quot;postalCode&quot;: &quot;50266&quot;,
+          &quot;countryCd&quot;: &quot;US&quot;,
+          &quot;addressLine1&quot;: &quot;6500 EP True Parkway&quot;,
+          &quot;addressLine2&quot;: &quot;Apt 111&quot;,
+          &quot;addressLine3&quot;: &quot;&quot;,
+          &quot;city&quot;: &quot;Des Moines&quot;,
+          &quot;county&quot;: null,
+          &quot;inCareOf&quot;: null,
+          &quot;subdivision&quot;: null,
+          &quot;attention&quot;: null,
+          &quot;validationIndicator&quot;: null,
+          &quot;latitude&quot;: null,
+          &quot;longitude&quot;: null,
+          &quot;accuracy&quot;: null,
+          &quot;referenceId&quot;: null
+        }
+      ],
+      &quot;chats&quot;: [
+      ],
+      &quot;emails&quot;: [
+      ],
+      &quot;phones&quot;: [
+      ],
+      &quot;socialNets&quot;: [
+      ],
+      &quot;webAddresses&quot;: [
+      ],
+      &quot;agencies&quot;: [
+      ],
+      &quot;indCustomerAdditionalNames&quot;: [
+      ],
+      &quot;businessCustomerAdditionalNames&quot;: null,
+      &quot;customerEmployments&quot;: null,
+      &quot;providers&quot;: null,
+      &quot;genericRelationships&quot;: [
+      ],
+      &quot;navigationLinks&quot;: [
+      ],
+      &quot;lastUpdateDate&quot;: &quot;2025-05-29T18:01:27.550Z&quot;
+    },
+    {
+      &quot;customerNumber&quot;: &quot;523857&quot;,
+      &quot;customerType&quot;: &quot;INDV&quot;,
+      &quot;accountNumber&quot;: &quot;623855&quot;,
+      &quot;customerStatus&quot;: &quot;CUSTOMER&quot;,
+      &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;owner&quot;: null,
+      &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;displayValue&quot;: &quot;John Deere&quot;,
+      &quot;brandCd&quot;: null,
+      &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;specialClaimReview&quot;: false,
+      &quot;paperless&quot;: false,
+      &quot;segments&quot;: [
+      ],
+      &quot;registeredOnline&quot;: false,
+      &quot;archived&quot;: false,
+      &quot;sourceOfExchangeRate&quot;: null,
+      &quot;rateDateIntake&quot;: null,
+      &quot;rateDatePayment&quot;: null,
+      &quot;preferredCurrency&quot;: null,
+      &quot;individualDetails&quot;: {
+        &quot;firstName&quot;: &quot;John&quot;,
+        &quot;lastName&quot;: &quot;Deere&quot;,
+        &quot;middleName&quot;: &quot;&quot;,
+        &quot;title&quot;: null,
+        &quot;suffix&quot;: null,
+        &quot;nickname&quot;: null,
+        &quot;birthDate&quot;: &quot;1975-03-03&quot;,
+        &quot;genderCd&quot;: null,
+        &quot;maritalStatusCd&quot;: null,
+        &quot;taxId&quot;: &quot;563-45-3453&quot;,
+        &quot;deceased&quot;: false,
+        &quot;deathDate&quot;: null,
+        &quot;deathNotificationReceived&quot;: false,
+        &quot;occupationCd&quot;: null,
+        &quot;occupationDescription&quot;: null,
+        &quot;tobaccoCd&quot;: null,
+        &quot;citizenshipCd&quot;: null,
+        &quot;interests&quot;: [
+        ],
+        &quot;disabilities&quot;: [
+        ],
+        &quot;designationCd&quot;: null,
+        &quot;designationDescription&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;associateEmployments&quot;: false,
+        &quot;associateProviders&quot;: false,
+        &quot;associateBusinessEntity&quot;: false
+      },
+      &quot;businessDetails&quot;: null,
+      &quot;extensionFields&quot;: {
+        &quot;electronicConsent&quot;: null,
+        &quot;participationEmployments&quot;: [
+          {
+            &quot;sponsorNumber&quot;: &quot;523855&quot;,
+            &quot;employeeId&quot;: &quot;&quot;
+          }
+        ]
+      },
+      &quot;preferredContactMethod&quot;: null,
+      &quot;majorAccount&quot;: null,
+      &quot;groupInfo&quot;: [
+      ],
+      &quot;addresses&quot;: [
+        {
+          &quot;id&quot;: 216715950,
+          &quot;contactMethod&quot;: &quot;ADDRESS&quot;,
+          &quot;contactType&quot;: &quot;residence&quot;,
+          &quot;preferredInd&quot;: null,
+          &quot;doNotSolicitInd&quot;: null,
+          &quot;comment&quot;: null,
+          &quot;communicationPreferences&quot;: [
+          ],
+          &quot;extensionFields&quot;: {
+          },
+          &quot;temporary&quot;: false,
+          &quot;effectiveFrom&quot;: null,
+          &quot;effectiveTo&quot;: null,
+          &quot;duration&quot;: null,
+          &quot;stateProvCd&quot;: &quot;MA&quot;,
+          &quot;postalCode&quot;: &quot;02155&quot;,
+          &quot;countryCd&quot;: &quot;US&quot;,
+          &quot;addressLine1&quot;: &quot;56 Thirty Three Way&quot;,
+          &quot;addressLine2&quot;: &quot;&quot;,
+          &quot;addressLine3&quot;: &quot;&quot;,
+          &quot;city&quot;: &quot;Medford&quot;,
+          &quot;county&quot;: null,
+          &quot;inCareOf&quot;: null,
+          &quot;subdivision&quot;: null,
+          &quot;attention&quot;: null,
+          &quot;validationIndicator&quot;: null,
+          &quot;latitude&quot;: null,
+          &quot;longitude&quot;: null,
+          &quot;accuracy&quot;: null,
+          &quot;referenceId&quot;: null
+        }
+      ],
+      &quot;chats&quot;: [
+      ],
+      &quot;emails&quot;: [
+      ],
+      &quot;phones&quot;: [
+      ],
+      &quot;socialNets&quot;: [
+      ],
+      &quot;webAddresses&quot;: [
+      ],
+      &quot;agencies&quot;: [
+      ],
+      &quot;indCustomerAdditionalNames&quot;: [
+      ],
+      &quot;businessCustomerAdditionalNames&quot;: null,
+      &quot;customerEmployments&quot;: null,
+      &quot;providers&quot;: null,
+      &quot;genericRelationships&quot;: [
+      ],
+      &quot;navigationLinks&quot;: [
+      ],
+      &quot;lastUpdateDate&quot;: &quot;2022-09-13T07:47:00.597Z&quot;
+    },
+    {
+      &quot;customerNumber&quot;: &quot;521491&quot;,
+      &quot;customerType&quot;: &quot;INDV&quot;,
+      &quot;accountNumber&quot;: &quot;621490&quot;,
+      &quot;customerStatus&quot;: &quot;CUSTOMER&quot;,
+      &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;owner&quot;: null,
+      &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;displayValue&quot;: &quot;john doe&quot;,
+      &quot;brandCd&quot;: null,
+      &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;specialClaimReview&quot;: false,
+      &quot;paperless&quot;: false,
+      &quot;segments&quot;: [
+      ],
+      &quot;registeredOnline&quot;: false,
+      &quot;archived&quot;: false,
+      &quot;sourceOfExchangeRate&quot;: null,
+      &quot;rateDateIntake&quot;: null,
+      &quot;rateDatePayment&quot;: null,
+      &quot;preferredCurrency&quot;: null,
+      &quot;individualDetails&quot;: {
+        &quot;firstName&quot;: &quot;john&quot;,
+        &quot;lastName&quot;: &quot;doe&quot;,
+        &quot;middleName&quot;: &quot;&quot;,
+        &quot;title&quot;: null,
+        &quot;suffix&quot;: null,
+        &quot;nickname&quot;: null,
+        &quot;birthDate&quot;: &quot;1978-09-08&quot;,
+        &quot;genderCd&quot;: &quot;male&quot;,
+        &quot;maritalStatusCd&quot;: &quot;S&quot;,
+        &quot;taxId&quot;: null,
+        &quot;deceased&quot;: false,
+        &quot;deathDate&quot;: null,
+        &quot;deathNotificationReceived&quot;: false,
+        &quot;occupationCd&quot;: null,
+        &quot;occupationDescription&quot;: null,
+        &quot;tobaccoCd&quot;: null,
+        &quot;citizenshipCd&quot;: null,
+        &quot;interests&quot;: [
+        ],
+        &quot;disabilities&quot;: [
+        ],
+        &quot;designationCd&quot;: null,
+        &quot;designationDescription&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;associateEmployments&quot;: false,
+        &quot;associateProviders&quot;: false,
+        &quot;associateBusinessEntity&quot;: false
+      },
+      &quot;businessDetails&quot;: null,
+      &quot;extensionFields&quot;: {
+        &quot;electronicConsent&quot;: null,
+        &quot;participationEmployments&quot;: [
+          {
+            &quot;sponsorNumber&quot;: &quot;521490&quot;,
+            &quot;employeeId&quot;: &quot;1&quot;
+          }
+        ]
+      },
+      &quot;preferredContactMethod&quot;: null,
+      &quot;majorAccount&quot;: null,
+      &quot;groupInfo&quot;: [
+      ],
+      &quot;addresses&quot;: [
+        {
+          &quot;id&quot;: 151169418,
+          &quot;contactMethod&quot;: &quot;ADDRESS&quot;,
+          &quot;contactType&quot;: &quot;residence&quot;,
+          &quot;preferredInd&quot;: null,
+          &quot;doNotSolicitInd&quot;: null,
+          &quot;comment&quot;: null,
+          &quot;communicationPreferences&quot;: [
+          ],
+          &quot;extensionFields&quot;: {
+          },
+          &quot;temporary&quot;: false,
+          &quot;effectiveFrom&quot;: null,
+          &quot;effectiveTo&quot;: null,
+          &quot;duration&quot;: null,
+          &quot;stateProvCd&quot;: &quot;TN&quot;,
+          &quot;postalCode&quot;: &quot;11111&quot;,
+          &quot;countryCd&quot;: &quot;US&quot;,
+          &quot;addressLine1&quot;: &quot;t&quot;,
+          &quot;addressLine2&quot;: &quot;&quot;,
+          &quot;addressLine3&quot;: &quot;&quot;,
+          &quot;city&quot;: &quot;t&quot;,
+          &quot;county&quot;: null,
+          &quot;inCareOf&quot;: null,
+          &quot;subdivision&quot;: null,
+          &quot;attention&quot;: null,
+          &quot;validationIndicator&quot;: null,
+          &quot;latitude&quot;: null,
+          &quot;longitude&quot;: null,
+          &quot;accuracy&quot;: null,
+          &quot;referenceId&quot;: null
+        }
+      ],
+      &quot;chats&quot;: [
+      ],
+      &quot;emails&quot;: [
+      ],
+      &quot;phones&quot;: [
+      ],
+      &quot;socialNets&quot;: [
+      ],
+      &quot;webAddresses&quot;: [
+      ],
+      &quot;agencies&quot;: [
+      ],
+      &quot;indCustomerAdditionalNames&quot;: [
+      ],
+      &quot;businessCustomerAdditionalNames&quot;: null,
+      &quot;customerEmployments&quot;: null,
+      &quot;providers&quot;: null,
+      &quot;genericRelationships&quot;: [
+      ],
+      &quot;navigationLinks&quot;: [
+      ],
+      &quot;lastUpdateDate&quot;: &quot;2021-12-13T10:33:25.880Z&quot;
+    },
+    {
+      &quot;customerNumber&quot;: &quot;527734&quot;,
+      &quot;customerType&quot;: &quot;INDV&quot;,
+      &quot;accountNumber&quot;: &quot;627732&quot;,
+      &quot;customerStatus&quot;: &quot;CUSTOMER&quot;,
+      &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;owner&quot;: null,
+      &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;displayValue&quot;: &quot;John Doeer&quot;,
+      &quot;brandCd&quot;: null,
+      &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;specialClaimReview&quot;: false,
+      &quot;paperless&quot;: false,
+      &quot;segments&quot;: [
+      ],
+      &quot;registeredOnline&quot;: false,
+      &quot;archived&quot;: false,
+      &quot;sourceOfExchangeRate&quot;: null,
+      &quot;rateDateIntake&quot;: null,
+      &quot;rateDatePayment&quot;: null,
+      &quot;preferredCurrency&quot;: null,
+      &quot;individualDetails&quot;: {
+        &quot;firstName&quot;: &quot;John&quot;,
+        &quot;lastName&quot;: &quot;Doeer&quot;,
+        &quot;middleName&quot;: &quot;&quot;,
+        &quot;title&quot;: null,
+        &quot;suffix&quot;: null,
+        &quot;nickname&quot;: null,
+        &quot;birthDate&quot;: &quot;1985-11-17&quot;,
+        &quot;genderCd&quot;: null,
+        &quot;maritalStatusCd&quot;: null,
+        &quot;taxId&quot;: &quot;178-76-7890&quot;,
+        &quot;deceased&quot;: false,
+        &quot;deathDate&quot;: null,
+        &quot;deathNotificationReceived&quot;: false,
+        &quot;occupationCd&quot;: null,
+        &quot;occupationDescription&quot;: null,
+        &quot;tobaccoCd&quot;: null,
+        &quot;citizenshipCd&quot;: null,
+        &quot;interests&quot;: [
+        ],
+        &quot;disabilities&quot;: [
+        ],
+        &quot;designationCd&quot;: null,
+        &quot;designationDescription&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;associateEmployments&quot;: false,
+        &quot;associateProviders&quot;: false,
+        &quot;associateBusinessEntity&quot;: false
+      },
+      &quot;businessDetails&quot;: null,
+      &quot;extensionFields&quot;: {
+        &quot;electronicConsent&quot;: null,
+        &quot;participationEmployments&quot;: [
+          {
+            &quot;sponsorNumber&quot;: &quot;527706&quot;,
+            &quot;employeeId&quot;: &quot;&quot;
+          }
+        ]
+      },
+      &quot;preferredContactMethod&quot;: null,
+      &quot;majorAccount&quot;: null,
+      &quot;groupInfo&quot;: [
+      ],
+      &quot;addresses&quot;: [
+        {
+          &quot;id&quot;: 405074562,
+          &quot;contactMethod&quot;: &quot;ADDRESS&quot;,
+          &quot;contactType&quot;: &quot;residence&quot;,
+          &quot;preferredInd&quot;: null,
+          &quot;doNotSolicitInd&quot;: null,
+          &quot;comment&quot;: null,
+          &quot;communicationPreferences&quot;: [
+          ],
+          &quot;extensionFields&quot;: {
+          },
+          &quot;temporary&quot;: false,
+          &quot;effectiveFrom&quot;: null,
+          &quot;effectiveTo&quot;: null,
+          &quot;duration&quot;: null,
+          &quot;stateProvCd&quot;: &quot;IA&quot;,
+          &quot;postalCode&quot;: &quot;23456&quot;,
+          &quot;countryCd&quot;: &quot;US&quot;,
+          &quot;addressLine1&quot;: &quot;111&quot;,
+          &quot;addressLine2&quot;: &quot;&quot;,
+          &quot;addressLine3&quot;: &quot;&quot;,
+          &quot;city&quot;: &quot;Polk&quot;,
+          &quot;county&quot;: null,
+          &quot;inCareOf&quot;: null,
+          &quot;subdivision&quot;: null,
+          &quot;attention&quot;: null,
+          &quot;validationIndicator&quot;: null,
+          &quot;latitude&quot;: null,
+          &quot;longitude&quot;: null,
+          &quot;accuracy&quot;: null,
+          &quot;referenceId&quot;: null
+        }
+      ],
+      &quot;chats&quot;: [
+      ],
+      &quot;emails&quot;: [
+      ],
+      &quot;phones&quot;: [
+      ],
+      &quot;socialNets&quot;: [
+      ],
+      &quot;webAddresses&quot;: [
+      ],
+      &quot;agencies&quot;: [
+      ],
+      &quot;indCustomerAdditionalNames&quot;: [
+      ],
+      &quot;businessCustomerAdditionalNames&quot;: null,
+      &quot;customerEmployments&quot;: null,
+      &quot;providers&quot;: null,
+      &quot;genericRelationships&quot;: [
+      ],
+      &quot;navigationLinks&quot;: [
+      ],
+      &quot;lastUpdateDate&quot;: &quot;2025-05-30T22:15:45.750Z&quot;
+    },
+    {
+      &quot;customerNumber&quot;: &quot;512968&quot;,
+      &quot;customerType&quot;: &quot;INDIVIDUAL_LEAD&quot;,
+      &quot;accountNumber&quot;: &quot;612968&quot;,
+      &quot;customerStatus&quot;: &quot;UNQUALIFIED&quot;,
+      &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;owner&quot;: null,
+      &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;displayValue&quot;: &quot;John Hughes&quot;,
+      &quot;brandCd&quot;: null,
+      &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;specialClaimReview&quot;: false,
+      &quot;paperless&quot;: false,
+      &quot;segments&quot;: [
+      ],
+      &quot;registeredOnline&quot;: false,
+      &quot;archived&quot;: false,
+      &quot;sourceOfExchangeRate&quot;: null,
+      &quot;rateDateIntake&quot;: null,
+      &quot;rateDatePayment&quot;: null,
+      &quot;preferredCurrency&quot;: null,
+      &quot;individualDetails&quot;: {
+        &quot;firstName&quot;: &quot;John&quot;,
+        &quot;lastName&quot;: &quot;Hughes&quot;,
+        &quot;middleName&quot;: &quot;&quot;,
+        &quot;title&quot;: null,
+        &quot;suffix&quot;: null,
+        &quot;nickname&quot;: &quot;&quot;,
+        &quot;birthDate&quot;: null,
+        &quot;genderCd&quot;: null,
+        &quot;maritalStatusCd&quot;: null,
+        &quot;taxId&quot;: &quot;&quot;,
+        &quot;deceased&quot;: false,
+        &quot;deathDate&quot;: null,
+        &quot;deathNotificationReceived&quot;: false,
+        &quot;occupationCd&quot;: null,
+        &quot;occupationDescription&quot;: null,
+        &quot;tobaccoCd&quot;: null,
+        &quot;citizenshipCd&quot;: null,
+        &quot;interests&quot;: [
+        ],
+        &quot;disabilities&quot;: [
+        ],
+        &quot;designationCd&quot;: null,
+        &quot;designationDescription&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;associateEmployments&quot;: false,
+        &quot;associateProviders&quot;: false,
+        &quot;associateBusinessEntity&quot;: false
+      },
+      &quot;businessDetails&quot;: null,
+      &quot;extensionFields&quot;: {
+        &quot;electronicConsent&quot;: null,
+        &quot;participationEmployments&quot;: [
+        ]
+      },
+      &quot;preferredContactMethod&quot;: null,
+      &quot;majorAccount&quot;: null,
+      &quot;groupInfo&quot;: [
+      ],
+      &quot;addresses&quot;: [
+      ],
+      &quot;chats&quot;: [
+      ],
+      &quot;emails&quot;: [
+      ],
+      &quot;phones&quot;: [
+      ],
+      &quot;socialNets&quot;: [
+      ],
+      &quot;webAddresses&quot;: [
+      ],
+      &quot;agencies&quot;: [
+        {
+          &quot;agencyCode&quot;: &quot;QAG&quot;
+        }
+      ],
+      &quot;indCustomerAdditionalNames&quot;: [
+      ],
+      &quot;businessCustomerAdditionalNames&quot;: null,
+      &quot;customerEmployments&quot;: null,
+      &quot;providers&quot;: null,
+      &quot;genericRelationships&quot;: [
+      ],
+      &quot;navigationLinks&quot;: [
+      ],
+      &quot;lastUpdateDate&quot;: &quot;2021-01-05T15:11:09.770Z&quot;
+    },
+    {
+      &quot;customerNumber&quot;: &quot;520251&quot;,
+      &quot;customerType&quot;: &quot;INDIVIDUAL_LEAD&quot;,
+      &quot;accountNumber&quot;: &quot;620250&quot;,
+      &quot;customerStatus&quot;: &quot;UNQUALIFIED&quot;,
+      &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;owner&quot;: null,
+      &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;displayValue&quot;: &quot;John L&quot;,
+      &quot;brandCd&quot;: null,
+      &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;specialClaimReview&quot;: false,
+      &quot;paperless&quot;: false,
+      &quot;segments&quot;: [
+      ],
+      &quot;registeredOnline&quot;: false,
+      &quot;archived&quot;: false,
+      &quot;sourceOfExchangeRate&quot;: null,
+      &quot;rateDateIntake&quot;: null,
+      &quot;rateDatePayment&quot;: null,
+      &quot;preferredCurrency&quot;: null,
+      &quot;individualDetails&quot;: {
+        &quot;firstName&quot;: &quot;John&quot;,
+        &quot;lastName&quot;: &quot;L&quot;,
+        &quot;middleName&quot;: &quot;&quot;,
+        &quot;title&quot;: null,
+        &quot;suffix&quot;: null,
+        &quot;nickname&quot;: &quot;&quot;,
+        &quot;birthDate&quot;: null,
+        &quot;genderCd&quot;: null,
+        &quot;maritalStatusCd&quot;: null,
+        &quot;taxId&quot;: &quot;&quot;,
+        &quot;deceased&quot;: false,
+        &quot;deathDate&quot;: null,
+        &quot;deathNotificationReceived&quot;: false,
+        &quot;occupationCd&quot;: null,
+        &quot;occupationDescription&quot;: null,
+        &quot;tobaccoCd&quot;: null,
+        &quot;citizenshipCd&quot;: null,
+        &quot;interests&quot;: [
+        ],
+        &quot;disabilities&quot;: [
+        ],
+        &quot;designationCd&quot;: null,
+        &quot;designationDescription&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;associateEmployments&quot;: false,
+        &quot;associateProviders&quot;: false,
+        &quot;associateBusinessEntity&quot;: false
+      },
+      &quot;businessDetails&quot;: null,
+      &quot;extensionFields&quot;: {
+        &quot;electronicConsent&quot;: null,
+        &quot;participationEmployments&quot;: [
+        ]
+      },
+      &quot;preferredContactMethod&quot;: null,
+      &quot;majorAccount&quot;: null,
+      &quot;groupInfo&quot;: [
+      ],
+      &quot;addresses&quot;: [
+      ],
+      &quot;chats&quot;: [
+      ],
+      &quot;emails&quot;: [
+        {
+          &quot;id&quot;: 102144177,
+          &quot;contactMethod&quot;: &quot;EMAIL&quot;,
+          &quot;contactType&quot;: null,
+          &quot;preferredInd&quot;: null,
+          &quot;doNotSolicitInd&quot;: false,
+          &quot;comment&quot;: &quot;&quot;,
+          &quot;communicationPreferences&quot;: [
+          ],
+          &quot;extensionFields&quot;: {
+          },
+          &quot;emailId&quot;: &quot;xyz@yahoo.com&quot;,
+          &quot;consentStatus&quot;: &quot;NOT_REQUESTED&quot;,
+          &quot;consentDate&quot;: null
+        }
+      ],
+      &quot;phones&quot;: [
+        {
+          &quot;id&quot;: 102144178,
+          &quot;contactMethod&quot;: &quot;PHONE&quot;,
+          &quot;contactType&quot;: null,
+          &quot;preferredInd&quot;: null,
+          &quot;doNotSolicitInd&quot;: false,
+          &quot;comment&quot;: &quot;&quot;,
+          &quot;communicationPreferences&quot;: [
+          ],
+          &quot;extensionFields&quot;: {
+          },
+          &quot;temporary&quot;: false,
+          &quot;effectiveFrom&quot;: null,
+          &quot;effectiveTo&quot;: null,
+          &quot;duration&quot;: null,
+          &quot;phoneNumber&quot;: &quot;9997779898&quot;,
+          &quot;consentToTextStatus&quot;: null,
+          &quot;consentToTextDate&quot;: null,
+          &quot;preferredDaysToContact&quot;: [
+          ],
+          &quot;preferredTimesToContact&quot;: [
+          ],
+          &quot;phoneExtension&quot;: &quot;&quot;,
+          &quot;consentStatus&quot;: &quot;NOT_REQUESTED&quot;,
+          &quot;consentStatusDeniedReason&quot;: null,
+          &quot;consentToTextStatusDeniedReason&quot;: null,
+          &quot;consentDate&quot;: null
+        }
+      ],
+      &quot;socialNets&quot;: [
+      ],
+      &quot;webAddresses&quot;: [
+      ],
+      &quot;agencies&quot;: [
+        {
+          &quot;agencyCode&quot;: &quot;QAG&quot;
+        }
+      ],
+      &quot;indCustomerAdditionalNames&quot;: [
+      ],
+      &quot;businessCustomerAdditionalNames&quot;: null,
+      &quot;customerEmployments&quot;: null,
+      &quot;providers&quot;: null,
+      &quot;genericRelationships&quot;: [
+      ],
+      &quot;navigationLinks&quot;: [
+      ],
+      &quot;lastUpdateDate&quot;: &quot;2021-06-24T20:37:12.550Z&quot;
+    },
+    {
+      &quot;customerNumber&quot;: &quot;524362&quot;,
+      &quot;customerType&quot;: &quot;INDV&quot;,
+      &quot;accountNumber&quot;: &quot;624360&quot;,
+      &quot;customerStatus&quot;: &quot;CUSTOMER&quot;,
+      &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;owner&quot;: null,
+      &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+      &quot;displayValue&quot;: &quot;John Mather&quot;,
+      &quot;brandCd&quot;: null,
+      &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+      &quot;specialClaimReview&quot;: false,
+      &quot;paperless&quot;: false,
+      &quot;segments&quot;: [
+      ],
+      &quot;registeredOnline&quot;: false,
+      &quot;archived&quot;: false,
+      &quot;sourceOfExchangeRate&quot;: null,
+      &quot;rateDateIntake&quot;: null,
+      &quot;rateDatePayment&quot;: null,
+      &quot;preferredCurrency&quot;: null,
+      &quot;individualDetails&quot;: {
+        &quot;firstName&quot;: &quot;John&quot;,
+        &quot;lastName&quot;: &quot;Mather&quot;,
+        &quot;middleName&quot;: &quot;&quot;,
+        &quot;title&quot;: null,
+        &quot;suffix&quot;: null,
+        &quot;nickname&quot;: null,
+        &quot;birthDate&quot;: &quot;1961-01-05&quot;,
+        &quot;genderCd&quot;: &quot;male&quot;,
+        &quot;maritalStatusCd&quot;: &quot;M&quot;,
+        &quot;taxId&quot;: &quot;092-34-8823&quot;,
+        &quot;deceased&quot;: false,
+        &quot;deathDate&quot;: null,
+        &quot;deathNotificationReceived&quot;: false,
+        &quot;occupationCd&quot;: null,
+        &quot;occupationDescription&quot;: null,
+        &quot;tobaccoCd&quot;: null,
+        &quot;citizenshipCd&quot;: null,
+        &quot;interests&quot;: [
+        ],
+        &quot;disabilities&quot;: [
+        ],
+        &quot;designationCd&quot;: null,
+        &quot;designationDescription&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;associateEmployments&quot;: false,
+        &quot;associateProviders&quot;: false,
+        &quot;associateBusinessEntity&quot;: false
+      },
+      &quot;businessDetails&quot;: null,
+      &quot;extensionFields&quot;: {
+        &quot;electronicConsent&quot;: null,
+        &quot;participationEmployments&quot;: [
+          {
+            &quot;sponsorNumber&quot;: &quot;523744&quot;,
+            &quot;employeeId&quot;: &quot;&quot;
+          }
+        ]
+      },
+      &quot;preferredContactMethod&quot;: null,
+      &quot;majorAccount&quot;: null,
+      &quot;groupInfo&quot;: [
+      ],
+      &quot;addresses&quot;: [
+        {
+          &quot;id&quot;: 235446145,
+          &quot;contactMethod&quot;: &quot;ADDRESS&quot;,
+          &quot;contactType&quot;: &quot;residence&quot;,
+          &quot;preferredInd&quot;: null,
+          &quot;doNotSolicitInd&quot;: null,
+          &quot;comment&quot;: null,
+          &quot;communicationPreferences&quot;: [
+          ],
+          &quot;extensionFields&quot;: {
+          },
+          &quot;temporary&quot;: false,
+          &quot;effectiveFrom&quot;: null,
+          &quot;effectiveTo&quot;: null,
+          &quot;duration&quot;: null,
+          &quot;stateProvCd&quot;: &quot;TX&quot;,
+          &quot;postalCode&quot;: &quot;75075&quot;,
+          &quot;countryCd&quot;: &quot;US&quot;,
+          &quot;addressLine1&quot;: &quot;13 Sunrise Avenue&quot;,
+          &quot;addressLine2&quot;: &quot;&quot;,
+          &quot;addressLine3&quot;: &quot;&quot;,
+          &quot;city&quot;: &quot;Plano&quot;,
+          &quot;county&quot;: null,
+          &quot;inCareOf&quot;: null,
+          &quot;subdivision&quot;: null,
+          &quot;attention&quot;: null,
+          &quot;validationIndicator&quot;: null,
+          &quot;latitude&quot;: null,
+          &quot;longitude&quot;: null,
+          &quot;accuracy&quot;: null,
+          &quot;referenceId&quot;: null
+        }
+      ],
+      &quot;chats&quot;: [
+      ],
+      &quot;emails&quot;: [
+      ],
+      &quot;phones&quot;: [
+      ],
+      &quot;socialNets&quot;: [
+      ],
+      &quot;webAddresses&quot;: [
+      ],
+      &quot;agencies&quot;: [
+      ],
+      &quot;indCustomerAdditionalNames&quot;: [
+      ],
+      &quot;businessCustomerAdditionalNames&quot;: null,
+      &quot;customerEmployments&quot;: null,
+      &quot;providers&quot;: null,
+      &quot;genericRelationships&quot;: [
+      ],
+      &quot;navigationLinks&quot;: [
+      ],
+      &quot;lastUpdateDate&quot;: &quot;2022-11-29T10:33:49.363Z&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print '=========Validating field values in response================= :'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>05:29:00.591 [print] =========Validating field values in response================= : 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

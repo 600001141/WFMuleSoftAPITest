@@ -7,6 +7,7 @@ Background:
   * header Accept = 'application/json'
   * def getUrl = baseUrl+'api/emails/v1/email?asofdate=2025-02-15T00%3A00%3A00Z'
 
+ @reg
 Scenario Outline: To verify the email API in Exp environment for ticket CSR-3534
 
 * karate.configure('ssl',true)
@@ -24,6 +25,12 @@ And print response
       And print length1
     * def count = length1.length
     * match count == 10
+
+* print '=========Validating field values in response================= :'
+    #* match response.content.[*].id contains <id>
+    * match response.content.[*].eMailAddressFrom.displayName contains <name>
+    * match response.content.[*].eMailAddressFrom.eMailAddressString contains <email>
+
 
  
 Examples: 

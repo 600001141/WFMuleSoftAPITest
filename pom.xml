@@ -77,7 +77,9 @@
 					<argLine>-Dfile.encoding=UTF-8</argLine>
 					
 					<includes>
-                    <include>**/ExpApiRunner.java</include>
+                    <include>**/ExpApiRunner1.java</include>
+                    <include>**/ProcApiRunner.java</include>
+                    <include>**/SysApiRunner.java</include>
                 </includes>
 					
 				</configuration>

@@ -1,12 +1,13 @@
 Feature: Getting mule-fileprocesses-proc-api MULE_PAYCLAIM_PROCESS_API for ticket CSR-3537
 
 
+
 Background: 
   * url baseUrl
   * header Content-Type = 'application/json'    
   * header Accept = 'application/json'
   
-
+@reg
 Scenario Outline: To verify the MULE_PAYCLAIM_PROCESS_API in Proc environment for ticket CSR-3537
 
 * karate.configure('ssl',true)

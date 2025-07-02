@@ -1,5 +1,7 @@
 Feature: Getting mule-okta-sys-api to test get users for ticket CSR-3539
 
+  
+  @reg
   Scenario Outline: Verify get users for mule-okta-sys-api in sys environment for ticket CSR-3539
   
     * karate.configure('ssl',true)

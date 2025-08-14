@@ -1,5 +1,7 @@
 Feature: Getting mule-okta-sys-api to test get users for ticket CSR-3539
 
+  
+  @reg
   Scenario Outline: Verify get users for mule-okta-sys-api in sys environment for ticket CSR-3539
   
     * karate.configure('ssl',true)
@@ -9,7 +11,7 @@ Feature: Getting mule-okta-sys-api to test get users for ticket CSR-3539
     Then status 200
     
     * def length1 = karate.jsonPath(response, "$.content.[*].id")
-    And print length1
+      And print length1
     * def count = length1.length
     * match count == 3
 

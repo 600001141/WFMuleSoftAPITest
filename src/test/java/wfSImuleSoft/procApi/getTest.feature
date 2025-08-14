@@ -6,6 +6,7 @@ Feature: Automate API with Query Parameters
     * header Content-Type = 'application/json'    
     * header Accept = 'application/json'
      
+  @reg 
   Scenario: Get File Processes with Query Params
   * karate.configure('ssl',true)
   # * configure printEnabled = true

@@ -2,6 +2,7 @@ Feature: Getting mule-fileprocesses-proc-api file process status ID for ticket C
 
 
 
+@reg
 Scenario Outline: To verify the file process status ID in Proc environment for ticket CSR-3537
 * karate.configure('ssl',true)
 Given url 'https://mule-wft.qa.medpro.com/api/fileprocesses/prc/v1/<status>'

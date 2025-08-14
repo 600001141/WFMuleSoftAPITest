@@ -1,0 +1,2 @@
+caseNumber,name,customerNumber,originalEffectiveDate,effectiveDate,geographyCd,stateCd,lastPerformer,timedStatusCd
+"""100004""","""All Eligible Employees""","""510005""","""2020-08-07""","""2020-08-07""","""US""","""TX""","""smuthukukumaran""","""ACTIVE"""

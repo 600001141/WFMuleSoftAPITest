@@ -1,6 +1,7 @@
 Feature: Getting mule-transprocesses-proc-api details for ticket CSR-3546
 
 
+@reg
   Scenario Outline: Verify mule Trans processes details api in proc environment for ticket CSR-3546
     * karate.configure('ssl',true)
     Given url 'https://mule-wft.qa.medpro.com/api/transprocesses/prc/v1/<Trans_details>'

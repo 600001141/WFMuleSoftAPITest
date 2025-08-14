@@ -1,7 +1,7 @@
 Feature: Getting mule-payClaim-proc-api Start The Process for ticket CSR-3541
 
 
-    
+  @reg 
   Scenario Outline: Verify mule-payClaim-proc-api in proc environment for ticket CSR-3541
   
     * karate.configure('ssl',true)

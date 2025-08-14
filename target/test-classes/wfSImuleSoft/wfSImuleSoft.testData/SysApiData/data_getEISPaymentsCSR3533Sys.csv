@@ -1,0 +1,2 @@
+paymentNumber,paymentStatus,typeCd,refId,displayValue,currencyCd,type
+"""401661""","""cleared""","""PARTY""","""527216""","""Deepak Test_15546 Kuanr""","""USD""","""cheque"""

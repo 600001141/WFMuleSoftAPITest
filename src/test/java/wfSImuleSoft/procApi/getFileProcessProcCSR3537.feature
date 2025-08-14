@@ -2,7 +2,7 @@ Feature: Getting mule-fileprocesses-proc-api GetFileProcess for ticket CSR-3537
 
 
 
-
+@reg
 Scenario Outline: To verify the File Process in Proc environment for ticket CSR-3537
 * karate.configure('ssl',true)
 Given url 'https://mule-wft.qa.medpro.com/api/fileprocesses/prc/v1/<file process>'
